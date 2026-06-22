@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Name | Python Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo"><span class="logo-mono">~/</span>Your Name</a>
+    <nav class="links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow"># role</p>
+        <h1>Hi, I'm <span class="accent">Your Name</span></h1>
+        <h2 class="hero-sub">Python Full-Stack Developer</h2>
+        <p class="hero-desc">
+          I build end-to-end web applications — from REST APIs and databases
+          to the interfaces people actually click on. Comfortable across
+          Python, Django/Flask, and modern JavaScript.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="terminal" id="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">whoami.py</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> python whoami.py</p>
+          <p class="output" id="typedOutput"></p>
+          <p class="cursor-line"><span class="prompt">$</span> <span class="blink">▍</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="eyebrow"># about</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <ul class="about-list">
+        <li><span class="tag-icon">▸</span> Full-stack developer who enjoys owning a feature from database schema to deployed UI.</li>
+        <li><span class="tag-icon">▸</span> Solid foundation in Python, with hands-on experience in Django/Flask for backend services.</li>
+        <li><span class="tag-icon">▸</span> Build responsive front ends with HTML5, CSS3, JavaScript, and React.</li>
+        <li><span class="tag-icon">▸</span> Comfortable with relational databases, REST APIs, and version control workflows.</li>
+        <li><span class="tag-icon">▸</span> Quick learner who picks up new frameworks and tools as projects demand.</li>
+        <li><span class="tag-icon">▸</span> Currently looking for opportunities to grow as a full-stack engineer.</li>
+      </ul>
+      <div class="about-card">
+        <p class="about-card-label">// quick facts</p>
+        <dl>
+          <div><dt>Based in</dt><dd>Your City, India</dd></div>
+          <div><dt>Focus</dt><dd>Python + React</dd></div>
+          <div><dt>Status</dt><dd>Open to work</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <p class="eyebrow"># skills</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Django</span>
+          <span class="chip">Flask</span>
+          <span class="chip">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="chips">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Database</h3>
+        <div class="chips">
+          <span class="chip">MySQL</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <div class="chips">
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Linux</span>
+          <span class="chip">Postman</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="eyebrow"># projects</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-index">01</span>
+          <h3>Project Name One</h3>
+        </div>
+        <p>Short description of what this project does and the problem it solves.
+           Mention the core feature in one sentence.</p>
+        <div class="chips">
+          <span class="chip chip-sm">Python</span>
+          <span class="chip chip-sm">Django</span>
+          <span class="chip chip-sm">PostgreSQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">Live Demo →</a>
+          <a href="#" target="_blank" rel="noopener">Source Code →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-index">02</span>
+          <h3>Project Name Two</h3>
+        </div>
+        <p>Short description of what this project does and the problem it solves.
+           Mention the core feature in one sentence.</p>
+        <div class="chips">
+          <span class="chip chip-sm">React</span>
+          <span class="chip chip-sm">Flask</span>
+          <span class="chip chip-sm">REST API</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">Live Demo →</a>
+          <a href="#" target="_blank" rel="noopener">Source Code →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <p class="eyebrow"># education</p>
+    <h2 class="section-title">Education & Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <p class="timeline-date">20XX — 20XX</p>
+        <h3>B.Sc. Computer Science</h3>
+        <p>Your College / University Name</p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <p class="timeline-date">Full-Stack Development Training</p>
+        <h3>Completed full-stack program covering Python, Django, and React</h3>
+        <p>Training Institute Name</p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <p class="timeline-date">20XX</p>
+        <h3>Python Full-Stack Intern</h3>
+        <p>Company Name — worked on [brief project description].</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <p class="eyebrow"># contact</p>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:you@example.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">you@example.com</span>
+      </a>
+      <a class="contact-card" href="tel:+910000000000">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+91 00000 00000</span>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">linkedin.com/in/yourprofile</span>
+      </a>
+      <a class="contact-card" href="https://github.com/yourusername" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">github.com/yourusername</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Your Name. All Rights Reserved.</p>
+  <p class="footer-mono">// built with HTML, CSS & JS</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
